@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: auto;
 }
 
@@ -36,4 +36,35 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/sitelenselikiwenasuki.ttf') format('truetype');
+}
+
+.tokipona {
+    font-family: 'MyCustomFont';
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: monospace;
+}
+
+h1 {
+    font-family: monospace;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
