@@ -55,8 +55,7 @@ a {
     cursor: pointer;
     padding: 5px;
     transition: background-color 0.3s, border-color 0.3s;
-    border: none; /* Убирает обводку */
-    outline: none; /* Убирает эффект нажатости */
+ 
 }
 
 .theme-icon {
