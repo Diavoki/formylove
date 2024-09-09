@@ -55,13 +55,11 @@ a {
     cursor: pointer;
     padding: 5px;
     transition: background-color 0.3s, border-color 0.3s;
-    border: none; /* Убирает обводку */
-    outline: none; /* Убирает эффект нажатости */
 }
 
 .theme-icon {
-    width: 24px; /* Установите нужный размер */
-    height: 24px; /* Установите нужный размер */
+    width: 5px; /* Установите нужный размер */
+    height: 5px; /* Установите нужный размер */
 }
 
 .dark-mode {
