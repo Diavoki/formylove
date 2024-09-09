@@ -1,24 +1,3 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-    max-height: 80vh;
-    overflow-y: auto;
-}
-*/
-
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +7,7 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     overflow-y: auto;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -36,10 +16,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90vw;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 15px;
+    position: relative; /* Для позиционирования кнопки переключения темы */
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 @font-face {
@@ -67,4 +46,39 @@ h1 {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.theme-switcher {
+    position: absolute; /* Позиционирование относительно контейнера */
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: none; /* Убирает обводку */
+    outline: none; /* Убирает эффект нажатости */
+}
+
+.theme-icon {
+    width: 24px; /* Установите нужный размер */
+    height: 24px; /* Установите нужный размер */
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .theme-switcher {
+    background-color: #333:
+    border-color: transparent; /* Убирает цвет обводки, чтобы соответствовать цвету картинки */
+}
+
+.dark-mode .theme-icon {
+    content: url('images/hearton2.png'); /* Изображение для темной темы */
 }
